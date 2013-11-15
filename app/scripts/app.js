@@ -5,7 +5,9 @@ angular.module('cascadiaJsjsApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config(function ($routeProvider) {
+  .config(function ($locationProvider, $routeProvider) {
+    $locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('!');
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

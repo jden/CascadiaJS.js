@@ -37,7 +37,7 @@
     <div style="margin-left:75%">
       <a href="https://twitter.com/share" class="twitter-share-button" data-via="DJMultiTouch" data-size="large" data-related="CascadiaJS" data-hashtags="CJS13">Tweet</a>
     </div>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location.href)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <div class="row marketing" style="margin:0 auto;text-align:center">
       <p><span class="btn btn-lg btn-primary" ng-click="random()">AND THEN?</span></p>
       <p><small>Psst: this is not officially associated with CascadiaJS, just a fun thang.</small></p>
@@ -46,10 +46,12 @@
     <div class="footer">
       <p>At CascadiaJS and want to contribue?  (yes, of course you do) - <a href="https://github.com/DJMultiTouch/CascadiaJS.js" target="_blank">check out the repo</a> and start hacking!  Some things that need done:
       <ul>
-        <li>The router has views hard coded in - it should serve up a view from a random number within the range of number of views (can be hard coded</li>
-        <li>Most importantly, add more views for sharing what you learned at CascadiaJS!</li>
+        <li>The router has views hard coded in - so adding entries is a pain.  This hard coded number (20) also lives in the random button.  Would be cool to make this more expandable.</li>
+        <li>Bug: The Tweet button doesn't tweet the full URL</li>
+        <li>Add some style!</li>
+        <li>Most importantly, add more views for sharing what you learned at CascadiaJS!  <strong>Can we hit 100?</strong></li>
       </ul>
-      </p><p>♥ from Vancouver</p>
+      </p><p><small>♥ from Vancouver</small></p>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -59,6 +61,6 @@
 
         <script src="scripts/2b3f0065.modules.js"></script>
 
-        <script src="scripts/a219ac9b.scripts.js"></script>
+        <script src="scripts/98acce14.scripts.js"></script>
 </body>
 </html>

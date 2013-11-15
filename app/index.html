@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 </head>
-  <body ng-app="cascadiaJsjsApp">
+  <body ng-app="cascadiaJsjsApp" ng-controller='MainCtrl'>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -37,7 +37,7 @@
     <div class="jumbotron" ng-view="">
     </div>
     <div class="row marketing" style='margin:0 auto;text-align:center;'>
-      <p><a class="btn btn-lg btn-primary" href="#">next.js</a></p>
+      <p><span class="btn btn-lg btn-primary" ng-click='random()'>AND THEN?</span></p>
       <p><small>Psst: this is not officially associated with CascadiaJS, just a fun thang.</small></p>
     </div>
     </div>
@@ -45,7 +45,6 @@
       <p>At CascadiaJS and want to contribue?  (yes, of course you do) - <a>check out the repo</a> and start hacking!  Some things that need done:
       <ul>
         <li>The router has views hard coded in - it should serve up a view from a random number within the range of number of views (can be hard coded</li>
-        <li>Next button needs to serve up a random route</li>
         <li>Most importantly, add more views for sharing what you learned at CascadiaJS!</li>
       </ul>
       <p>♥ from Vancouver</p>
@@ -79,7 +78,6 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/directives/random.js"></script>
         <!-- endbuild -->
 </body>
 </html>
